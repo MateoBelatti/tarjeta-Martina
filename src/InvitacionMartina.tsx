@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { CalendarHeart, Gem, Gift, CheckCircle, Camera, MapPin, Copy } from 'lucide-react';
 import presentacionImg from './assets/presentacion.png';
 import qr from "./assets/qr-code.png";
@@ -7,21 +8,21 @@ import qr from "./assets/qr-code.png";
 const datosEvento = {
   nombre: "Martina",
   edad: "15",
-  fraseBienvenida: "Quiero invitarte a compartir una de las noches más importantes de mi vida.",
-  fechaEvento: "12 de Septiembre 2026",
+  fraseBienvenida: "Hay momentos que solo ocurren una vez en la vida. Me encantaría compartir este con vos.",
+  fechaEvento: "Sábado 25 de Noviembre",
   horaEvento: "21:00",
   fechaDate: "2026-09-12T21:00:00",
   dressCode: "ELEGANTE SPORT",
-  aliasMp: "martu121212",
-  fechaLimiteRsvp: "1 de Septiembre",
+  aliasMp: "martina.mis15",
+  fechaLimiteRsvp: "10 de Noviembre",
   urlGoogleFormEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSfkGoS9gAfwmazUfG-OMAUou_m1huTvoyJFyKfdXQSgFY3Zrg/viewform?usp=header",
   nombreLugar: "Salón Los Robles",
   direccion: "Av. Libertador 1234, CABA",
-  lat: "-40.807302",
-  lng: "-65.081739"
+  lat: "-34.6037",
+  lng: "-58.3816"
 };
 
-const fadeUpVariant = {
+const fadeUpVariant: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
