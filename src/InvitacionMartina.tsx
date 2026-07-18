@@ -9,17 +9,17 @@ const datosEvento = {
   nombre: "Martina",
   edad: "15",
   fraseBienvenida: "Hay momentos que solo ocurren una vez en la vida. Me encantaría compartir este con vos.",
-  fechaEvento: "Sábado 25 de Noviembre",
+  fechaEvento: "Sábado 12 de Septiembre 2026",
   horaEvento: "21:00",
   fechaDate: "2026-09-12T21:00:00",
   dressCode: "ELEGANTE SPORT",
-  aliasMp: "martina.mis15",
-  fechaLimiteRsvp: "10 de Noviembre",
+  aliasMp: "martu121212",
+  fechaLimiteRsvp: "1 de Septiembre",
   urlGoogleFormEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSfkGoS9gAfwmazUfG-OMAUou_m1huTvoyJFyKfdXQSgFY3Zrg/viewform?usp=header",
-  nombreLugar: "Salón Los Robles",
-  direccion: "Av. Libertador 1234, CABA",
-  lat: "-34.6037",
-  lng: "-58.3816"
+  nombreLugar: "Salón ACA Unidad Turistica Las Grutas",
+  direccion: "Bariloche 98",
+  lat: "-40.807302",
+  lng: "-65.081739"
 };
 
 const fadeUpVariant: Variants = {
@@ -113,7 +113,7 @@ export default function InvitacionMartina() {
             Mis 15 {datosEvento.nombre}
           </h1>
           <p className="text-xs md:text-sm uppercase tracking-[0.2em] max-w-sm mx-auto mb-10 text-gray-500 leading-relaxed">
-            Quiero que seas parte de este momento tan importante para mí
+            Quiero invitarte a compartir una de las noches más importantes de mi vida.
           </p>
           <button 
             onClick={() => setIngresado(true)}
@@ -145,7 +145,9 @@ export default function InvitacionMartina() {
         </div>
         <div className="bg-white text-gray-800 p-10 md:p-16 text-center flex items-center justify-center h-[30vh] md:h-[15vh]">
           <motion.p variants={fadeUpVariant} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-lg md:text-2xl max-w-3xl leading-relaxed mx-auto">
-            "{datosEvento.fraseBienvenida}"
+            <b>
+                "{datosEvento.fraseBienvenida}"
+            </b>
           </motion.p>
         </div>
       </section>
