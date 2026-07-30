@@ -187,7 +187,15 @@ export default function InvitacionMartina() {
         <Gem size={40} strokeWidth={1} className="mb-6" />
         <h2 className="text-3xl tracking-[0.2em] uppercase font-display">Dress Code</h2>
         <Divider />
-        <p className="text-xl tracking-[0.1em]">{datosEvento.dressCode}</p>
+        <p className="text-xl tracking-[0.1em] mb-4 text-center">
+          {datosEvento.dressCode}
+          </p>
+        <p className="text-xl tracking-[0.1em] mb-4 text-center">
+          Asistir con un accesorio/prenda color violeta o lila
+        </p>
+        <p className="text-xl tracking-[0.1em] font-bold text-center">
+          NO ASISTIR CON COLORES ROSADOS, PLATEADOS Y ROJOS
+        </p>
       </Section>
 
       {/* 4. Regalos */}
