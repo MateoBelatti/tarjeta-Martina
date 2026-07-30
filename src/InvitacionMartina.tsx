@@ -9,9 +9,9 @@ const datosEvento = {
   nombre: "Martina",
   edad: "15",
   fraseBienvenida: "Hay momentos que solo ocurren una vez en la vida. Me encantaría compartir este con vos.",
-  fechaEvento: "Sábado 12 de Septiembre 2026",
-  horaEvento: "21:00",
-  fechaDate: "2026-09-12T21:00:00",
+  fechaEvento: "Domingo 13 de Septiembre 2026",
+  horaEvento: "Ingreso desde las 00.30 hasta 01.30 hs",
+  fechaDate: "2026-09-13T00:30:00",
   dressCode: "ELEGANTE SPORT",
   aliasMp: "martu121212",
   fechaLimiteRsvp: "1 de Septiembre",
@@ -190,11 +190,8 @@ export default function InvitacionMartina() {
         <p className="text-xl tracking-[0.1em] mb-4 text-center">
           {datosEvento.dressCode}
           </p>
-        <p className="text-xl tracking-[0.1em] mb-4 text-center">
-          Asistir con un accesorio/prenda color violeta o lila
-        </p>
         <p className="text-xl tracking-[0.1em] font-bold text-center">
-          NO ASISTIR CON COLORES ROSADOS, PLATEADOS Y ROJOS
+          NO ASISTIR CON COLORES ROSADOS, PLATEADOS, VIOLETAS, LILAS O ROJOS
         </p>
       </Section>
 
